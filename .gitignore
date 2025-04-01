@@ -3,3 +3,6 @@
 *.data
 *.names
 *.test
+
+.DS_Store
+.DS_Store?
