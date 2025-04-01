@@ -1,0 +1,5 @@
+# files to ignore
+*.csv 
+*.data
+*.names
+*.test
