@@ -1,8 +1,5 @@
 # files to ignore
 *.csv 
-*.data
-*.names
-*.test
 
 .DS_Store
 .DS_Store?
