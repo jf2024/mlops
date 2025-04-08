@@ -28,3 +28,19 @@ stages:
       hash: md5
       md5: adf63b6ce20f7ee74f63d5dabb325226
       size: 10829967
+  prepare_happiness:
+    cmd: python src/preprocessing_happy.py
+    deps:
+    - path: data/world_happy_report.csv
+      hash: md5
+      md5: 534481c77e715cbfdc95ed6ca4f95e0f
+      size: 552176
+    - path: src/preprocessing_happy.py
+      hash: md5
+      md5: b9ed4960c2aa18c7f942ae984152a7cf
+      size: 1174
+    outs:
+    - path: data/preprocessed_happy.csv
+      hash: md5
+      md5: 57b661f4583adfa6dd12d85873d11c45
+      size: 86227

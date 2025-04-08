@@ -1,5 +1,6 @@
 stages:
-  prepare:
+
+  prepare: #this was for lab03 example
     cmd: python Labs/Lab03/create_features.py
     deps:
       - data/adult.data
@@ -9,6 +10,14 @@ stages:
       - data/pipeline.pkl
       - data/processed_train_data.csv
       - data/processed_test_data.csv
+
+  prepare_happiness: #lab03 submission
+    cmd: python src/preprocessing_happy.py
+    deps:
+      - data/world_happy_report.csv
+      - src/preprocessing_happy.py
+    outs:
+      - data/preprocessed_happy.csv
 
 params: 
       - features.chi2percentile
