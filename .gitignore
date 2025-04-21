@@ -6,3 +6,6 @@
 __pycache__/
 
 .metaflow
+
+*.db
+*mlruns/
